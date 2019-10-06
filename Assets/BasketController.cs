@@ -4,27 +4,31 @@ using UnityEngine;
 
 public class BasketController : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.tag == "Apple")
-        {
-            Debug.Log("Tag=Apple");
-            
-        }
-        else
-        {
-            Debug.Log("Tag=Bomb");
-        }
-        Destroy(other.gameObject);
-        
-    }
+    public AudioClip appleSE;
+    public AudioClip bombSE;
+    AudioSource aud;
 
     void Start()
     {
-        
+        this.aud = GetComponent<AudioSource>();
     }
 
-    
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Apple")
+        {
+            this.aud.PlayOneShot(this.appleSE);
+
+        }
+        else
+        {
+            this.aud.PlayOneShot(this.bombSE);
+        }
+        Destroy(other.gameObject);
+
+    }
+
+
     void Update()
     {
         if(Input.GetMouseButtonDown(0))
