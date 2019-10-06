@@ -422,6 +422,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: apple
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: ba049ff8dffb84a5b8bbc69f6232bce6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Apple
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: ba049ff8dffb84a5b8bbc69f6232bce6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -490,6 +495,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bomb
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 0a64e06022667448e91b4056187e930d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Bomb
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0a64e06022667448e91b4056187e930d,
         type: 3}
