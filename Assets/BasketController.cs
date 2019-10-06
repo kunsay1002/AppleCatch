@@ -4,7 +4,21 @@ using UnityEngine;
 
 public class BasketController : MonoBehaviour
 {
-    
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Apple")
+        {
+            Debug.Log("Tag=Apple");
+            
+        }
+        else
+        {
+            Debug.Log("Tag=Bomb");
+        }
+        Destroy(other.gameObject);
+        
+    }
+
     void Start()
     {
         
