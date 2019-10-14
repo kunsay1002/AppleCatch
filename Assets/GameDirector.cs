@@ -44,12 +44,12 @@ public class GameDirector : MonoBehaviour
             this.generator.GetComponent<ItemGenerator>().SetParameter(
                 0.7f, -0.04f, 3);
         }
-        else if(5 <= this.time && this.time < 10)
+        else if(5 <= this.time && this.time < 12)
         {
             this.generator.GetComponent<ItemGenerator>().SetParameter(
-                0.8f, -0.05f, 6);
+                0.5f, -0.05f, 6);
         }
-        else if(10 <= this.time && this.time < 20)
+        else if(12 <= this.time && this.time < 23)
         {
             this.generator.GetComponent<ItemGenerator>().SetParameter(
                 0.8f, -0.04f, 4);
