@@ -54,7 +54,7 @@ public class GameDirector : MonoBehaviour
             this.generator.GetComponent<ItemGenerator>().SetParameter(
                 0.8f, -0.04f, 4);
         }
-        else if(20 <= this.time && this.time < 30)
+        else if(23 <= this.time && this.time < 30)
         {
             this.generator.GetComponent<ItemGenerator>().SetParameter(
                 1.0f, -0.03f, 2);
